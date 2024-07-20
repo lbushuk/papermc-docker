@@ -39,7 +39,7 @@ Create a directory for the server files. The newly created user must own this di
 
 This is the command used to start the server. Please read the following section to understand the options used.
 
-    docker run -p 25565:25565 -v /home/<username>/server:/papermc -d -ti --restart on-failure -e MC_RAM="8G" TZ="America/Winnipeg" --name "minecraft" --user 1001:1001 lbushuk/papermc-docker
+    docker run -p 25565:25565 -v /home/<username>/server:/papermc -d -ti --restart on-failure -e MC_RAM="8G" -e TZ="America/Winnipeg" --name "minecraft" --user 1001:1001 lbushuk/papermc-docker
 
 ## Options
 There are several command line options that users may want to specify when utilizing this image. These options are listed below with some brief explanation. An example will be provided with each. In the example, the part that the user can change will be surrounded by angle brackets (`< >`). Remember to *remove the angle brackets* before running the command.
