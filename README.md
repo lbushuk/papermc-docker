@@ -27,6 +27,7 @@ Example environment variables:
 
 Build the docker image with a tag of lbushuk/papermc-docker
 
+    cd papermc-docker
     docker build -t lbushuk/papermc-docker .
 
 Create a directory for the server files. The newly created user must own this directory.
